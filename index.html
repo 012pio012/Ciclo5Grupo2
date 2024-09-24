@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin UPeU Trabajo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* Sección de Inicio */
+        .intro {
+            background-color: #1abc9c;
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Encabezado */
+        header {
+            text-align: center;
+            position: relative;
+        }
+
+        .header-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .header-title {
+            font-size: 2rem;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 1rem 0;
+        }
+
+        /* Sección de Bibliografía */
+        #bibliografia {
+            background-color: #ecf0f1;
+            padding: 3rem 1.5rem;
+        }
+
+        #bibliografia h2 {
+            color: #34495e;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .bibliografia-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .bibliografia-content img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .bibliografia-content p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        /* Sección de Habilidades */
+        #habilidades {
+            background-color: #3498db;
+            color: white;
+            padding: 3rem 1.5rem;
+        }
+
+        #habilidades h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .habilidades-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 0 2rem;
+        }
+
+        #habilidades ul {
+            list-style-type: none;
+            padding: 0;
+            flex-grow: 1;
+        }
+
+        #habilidades ul li {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        #habilidades ul li:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .habilidades-video {
+            flex-shrink: 0;
+            max-width: 50%;
+            text-align: center;
+        }
+
+        .habilidades-video iframe {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sección de Proyectos */
+        #proyectos {
+            background-color: #f39c12;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        #proyectos h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .proyecto {
+            background-color: white;
+            padding: 1.5rem;
+            margin: 1rem auto;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .proyecto h3 {
+            color: #34495e;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .proyecto p {
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
+
+        .proyecto a {
+            text-decoration: none;
+            background-color: #34495e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .proyecto a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Pie de Página */
+        footer {
+            background-color: #34495e;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sección de Inicio -->
+    <header>
+        <img src="logo upeu.png" alt="Imagen del encabezado" class="header-image">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#bibliografia">Bibliografía</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+        <section id="inicio" class="intro">
+            <h1>¡Hola! Soy Pio Fernando Damian</h1>
+            <p>Bienvenido a mi página de trabajo de Sistemas integrados de gestión. Aquí encontrarás información sobre
+                el trabajo que se avanzó en clase.</p>
+        </section>
+        <h2 class="header-title">Trabajo de Sistemas Integrados de Gestión</h2>
+    </header>
+
+    <!-- Sección de Bibliografía -->
+    <section id="bibliografia">
+        <h2>Bibliografía</h2>
+        <div class="bibliografia-content">
+            <img src="upeu.jpeg" alt="Foto personal">
+            <p>
+                Soy un profesional en [Tu Especialidad] con experiencia en [área de especialización]. Me especializo en
+                [detalles específicos de tu trayectoria] y he trabajado en [proyectos importantes o logros]. Tengo un
+                enfoque centrado en [tus valores o filosofía profesional].
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidades-content">
+            <ul>
+                <li>Gestión de proyectos</li>
+                <li>Desarrollo web</li>
+                <li>Optimización de procesos</li>
+                <li>Habilidades de comunicación</li>
+                <li>Análisis de datos</li>
+            </ul>
+            <div class="habilidades-video">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/LadiyD8YlUU" title="Las 3 HABILIDADES que te harán GANAR MUCHO DINERO (+10.000$/mes)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1:
